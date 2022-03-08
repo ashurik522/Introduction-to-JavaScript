@@ -72,7 +72,7 @@ Do the following:
 function multiply(a, b){
   return a * b
 }
-
+console.log(multiply(5,5))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -248,10 +248,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers){
+  let miles = kilometers * 0.621371;
+  return miles;
 }
-
+console.log(miles(10))
 
 
 //Task 5b - Feet to CM
@@ -262,10 +263,11 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  let feet = cm * 0.0328084;
+  return feet;
 }
-
+console.log(feet(100));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
