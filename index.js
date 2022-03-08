@@ -226,6 +226,15 @@ function game(user, computer){
   } 
 }
 
+const playGame = () =>{
+  let userChoice = 'paper';
+  let computerChoice = getComputerChoice();
+  console.log('User choice is ' + userChoice + '.')
+  console.log('Computer choice is ' + computerChoice + '.') 
+  console.log(game(userChoice, computerChoice))
+};
+
+playGame()
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
