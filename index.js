@@ -346,10 +346,19 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+
+function vowelCounter(string) {
+  let count = 0;
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  for (let i of string.toLowerCase()) {
+    if (vowels.includes(i)) {
+      count++;
+    }
+  }
+  return count;
 }
 
+console.log(vowelCounter('Eat, sleep, code, repeat!'));
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
