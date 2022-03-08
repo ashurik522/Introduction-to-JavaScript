@@ -268,7 +268,7 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
-  let feet = cm * 0.0328084;
+  let feet = cm / 30.48;
   return feet;
 }
 console.log(feet(100));
@@ -289,11 +289,12 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(startNum){
-  return `${startNum} bottles of soda on  the wall, ${startNum} bottles of soda, take one down pass it around ${startNum - 1} bottles of soda on the wall`
+  return `${startNum} bottles of soda on the wall, ${startNum} bottles of soda, take one down pass it around ${startNum - 1} bottles of soda on the wall`
 };
 
-for (i = 1; i > 0; i--) {
+for (let i = 4; i > 1 ; i--) {
   console.log(annoyingSong(i));
+  
 };
 
 
