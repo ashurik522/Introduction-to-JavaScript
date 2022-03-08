@@ -34,7 +34,13 @@ Do the following:
    HINT: no function required
 */
 
+let firstThing = 140;
+let secondThing = 140;
 
+if (firstThing === secondThing) {
+  firstThing = 'Blah Blah'
+}
+console.log(firstThing)
 
 
 
@@ -49,7 +55,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let string1 = "1999";
+let num = parseInt(string1);
+console.log(num);
 
 
 /*
@@ -61,8 +69,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a * b
 }
 
 
@@ -77,8 +85,8 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return dogYears = age * 7
 }
 
 
@@ -129,9 +137,32 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight, age){
+  let food = 0;
+  if (age >= 1) {
+    if (weight <= 5){
+      food = weight * .05;
+    } else if (weight > 5 && weight <= 11) {
+      food = weight * .04;
+    } else if (weight > 11 && weight <= 15){
+      food = weight * .03;
+    } else {
+      food = weight * .02;
+    }
+  }
+  if (age < 1) {
+    if (age < (4/12)){
+      food = weight * .10;
+    } else if (age > (4/12) && age <= (7/12)){
+      food = weight * .05
+    } else if (age > (7/12)) {
+      food = weight * .04
+    }
+  }
+  return food;
 }
+
+console.log(hungryDog(4, 1 ))
 
 
 
