@@ -19,7 +19,11 @@ Do the following:
 
    HINT: no function required
 */
-
+ 
+const votingAge = 18;
+if(votingAge >= 18) {
+  console.log(true);
+}
 
 
 /*
@@ -288,7 +292,7 @@ function annoyingSong(startNum){
   return `${startNum} bottles of soda on  the wall, ${startNum} bottles of soda, take one down pass it around ${startNum - 1} bottles of soda on the wall`
 };
 
-for (i = 2; i > 0; i--) {
+for (i = 1; i > 0; i--) {
   console.log(annoyingSong(i));
 };
 
